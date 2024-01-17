@@ -1,4 +1,5 @@
-from pydantic import BaseModel, Field, constr, confloat
+from pydantic import BaseModel, Field, constr, confloat, create_model
+from typing import Optional
 
 
 validate_str = constr(

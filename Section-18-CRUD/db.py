@@ -18,3 +18,10 @@ class Cart(object):
                     return product
 
         return self.products
+
+    def edit_cart(self, old_product: Product, new_product: BaseProduct) -> NoReturn:
+        position = self.products.index(old_product)
+        self.products[position] = old_product.copy(update=new_product.dict())
+
+    def delete_product(self, product: Product) -> NoReturn:
+        self.products.remove(product)
