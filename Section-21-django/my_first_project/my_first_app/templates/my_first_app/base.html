@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{ static 'css/style.css' %}">
+    <title>Title</title>
+</head>
+<body>
+<h1>Probando</h1>
+<h2>Probando</h2>
+<h3>Probando</h3>
+<h4>Probando</h4>
+<h5>Probando</h5>
+<h6>Probando</h6>
+{% for persona in person %}
+<p>Persona: {{persona.first_name}} {{persona.last_name}}</p>
+{% endfor%}
+</body>
+</html>
